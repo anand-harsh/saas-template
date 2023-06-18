@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+body {
+
+  background: rgb(6, 213, 255);
+  background: radial-gradient(
+    circle,
+    rgba(6, 213, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 212, 255, 1) 19%,
+    rgba(0, 212, 255, 1) 24%,
+    rgba(0, 212, 255, 1) 28%,
+    rgba(81, 0, 255, 1) 36%,
+    rgba(255, 255, 255, 1) 59%,
+    rgba(221, 249, 255, 1) 65%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+*/
+navbar {
+  width: 100%;
+  display: inline-block;
+  align-items: center;
+  position: relative;
+  top: 3vh;
+  gap: 60rem;
+}
+
+navbar > ul {
+  float: right;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  position: relative;
+  right: 10rem;
+}
+navbar > ul > li {
+  cursor: pointer;
+  list-style: none;
+}
+
+navbar > .logo {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  float: left;
+  position: relative;
+  left: 7rem;
+}
+
+navbar > ul > .login,
+.started {
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+}
+navbar > ul > .login {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+navbar > ul > .started {
+  background-color: rgb(63, 63, 218);
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.container {
+  position: relative;
+  top: 10vh;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 3fr 3fr;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.child1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.child1 > h1 > span {
+  color: rgb(63, 63, 218);
+  text-decoration: underline;
+}
+
+.child1 > p {
+  line-height: 3px;
+}
+
+.container > .child1 > .gv-btn {
+  background-color: black;
+  color: white;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.child1 > button {
+  background-color: white;
+  padding: 0.5rem 3rem;
+  border: 1px solid black;
+  border-radius: 500px;
+  cursor: pointer;
+}
+
+.container > .child1 > .play {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid black;
+  width: 20rem;
+  height: 1.5rem;
+  padding: 0.5rem 3rem;
+}
+
+.container > .child1 > .play > p {
+  margin-left: 8rem;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  margin-left: -2rem;
+  border-top:15px solid transparent;
+  border-left: 25px solid rgb(0, 187, 255);
+  border-bottom: 15px solid transparent;
+  border-radius: 0.2rem 0.3rem;
+  position: relative;
+}
+
+.child2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  
+}
+.child2 img{
+  background-size: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 5rem;
+}
